@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "FT Router",
+  "version": "1.0.0",
+  "description": "Redireciona www.ft.com e ft.com para app.ft.com, preservando o resto da URL.",
+  "permissions": ["declarativeNetRequest", "storage"],
+  "host_permissions": [
+    "*://www.ft.com/*",
+    "*://ft.com/*",
+    "*://app.ft.com/*"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ft_redirect",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "FT Router",
+    "default_popup": "popup.html"
+  }
+}
