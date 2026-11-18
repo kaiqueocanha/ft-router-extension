@@ -1,9 +1,9 @@
-## O que mudou
+## What changed
 
-## Por quê
+## Why
 
-## Como testei
+## How I tested
 
-- [ ] Carreguei a extensão em `chrome://extensions` e testei o redirect
-- [ ] JSON válidos e `node --check` OK
-- [ ] Não adicionei permissões desnecessárias
+- [ ] Loaded the extension in `chrome://extensions` and tested the redirect
+- [ ] JSON files valid and `node --check` passes
+- [ ] No unnecessary permissions added

@@ -1,26 +1,26 @@
-# Contribuindo
+# Contributing
 
-Obrigado pelo interesse em contribuir com o FT Router!
+Thanks for your interest in contributing to FT Router!
 
-## Reportando bugs
+## Reporting bugs
 
-Abra uma [issue](../../issues/new/choose) com:
-- a URL de origem e a URL em que você caiu (remova dados pessoais);
-- o comportamento esperado;
-- versão do Chrome e da extensão.
+Open an [issue](../../issues/new/choose) with:
+- the URL you opened and the URL you ended up on (remove any personal data);
+- the expected behavior;
+- your Chrome and extension versions.
 
-## Sugerindo mudanças
+## Suggesting changes
 
-1. Faça um fork e crie um branch: `git checkout -b minha-mudanca`.
-2. Carregue a pasta em `chrome://extensions` (Modo do desenvolvedor) e teste manualmente.
-3. Garanta que os JSON são válidos (`python3 -m json.tool rules.json`) e que o JS passa em `node --check`.
-4. Abra um Pull Request descrevendo o que mudou e por quê.
+1. Fork the repo and create a branch: `git checkout -b my-change`.
+2. Load the folder in `chrome://extensions` (Developer mode) and test manually.
+3. Make sure the JSON files are valid (`python3 -m json.tool rules.json`) and the JS passes `node --check`.
+4. Open a Pull Request describing what changed and why.
 
-## Diretrizes
+## Guidelines
 
-- Mantenha a extensão mínima: sem dependências, sem build, sem coleta de dados.
-- Não adicione permissões além das necessárias; justifique qualquer nova permissão no PR.
-- Prefira regras declarativas em `rules.json` a lógica em JS.
-- Use mensagens de commit claras e no imperativo.
+- Keep the extension minimal: no dependencies, no build step, no data collection.
+- Don't add permissions beyond what is needed; justify any new permission in the PR.
+- Prefer declarative rules in `rules.json` over JS logic.
+- Write clear, imperative commit messages.
 
-Ao contribuir, você concorda que seu código será licenciado sob a [MIT](LICENSE).
+By contributing, you agree that your code will be licensed under the [MIT](LICENSE) license.

@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "FT Router",
   "version": "1.0.0",
-  "description": "Redireciona www.ft.com e ft.com para app.ft.com, preservando o resto da URL.",
+  "description": "Redirects www.ft.com and ft.com to app.ft.com, preserving the rest of the URL.",
   "permissions": ["declarativeNetRequest", "storage"],
   "host_permissions": [
     "*://www.ft.com/*",

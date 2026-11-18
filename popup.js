@@ -3,7 +3,7 @@ const state = document.getElementById("state");
 
 function render(enabled) {
   toggle.checked = enabled;
-  state.textContent = enabled ? "Ativado" : "Desativado";
+  state.textContent = enabled ? "Enabled" : "Disabled";
 }
 
 chrome.storage.local.get("enabled").then(({ enabled = true }) => render(enabled));

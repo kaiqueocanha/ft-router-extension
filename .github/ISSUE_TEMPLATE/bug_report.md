@@ -1,18 +1,18 @@
 ---
-name: Bug
-about: Algo não funciona como esperado
+name: Bug report
+about: Something doesn't work as expected
 labels: bug
 ---
 
-**URL aberta**
+**URL you opened**
 
 
-**URL em que você chegou**
+**URL you ended up on**
 
 
-**Comportamento esperado**
+**Expected behavior**
 
 
-**Ambiente**
-- Chrome/Chromium versão:
-- Versão da extensão:
+**Environment**
+- Chrome/Chromium version:
+- Extension version:

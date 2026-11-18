@@ -1,9 +1,9 @@
 # Changelog
 
-Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/), versionamento [SemVer](https://semver.org/lang/pt-BR/).
+Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), versioning follows [SemVer](https://semver.org/).
 
 ## [1.0.0]
 
-### Adicionado
-- Redirect de `www.ft.com` e `ft.com` para `app.ft.com`, preservando path, query e fragmento.
-- Popup com toggle on/off persistente e badge `ON`/`OFF`.
+### Added
+- Redirect from `www.ft.com` and `ft.com` to `app.ft.com`, preserving path, query and fragment.
+- Popup with a persistent on/off toggle and an `ON`/`OFF` badge.

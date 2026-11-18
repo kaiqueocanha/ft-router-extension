@@ -1,11 +1,11 @@
-# Política de Segurança
+# Security Policy
 
-## Reportando uma vulnerabilidade
+## Reporting a vulnerability
 
-Não abra uma issue pública. Use o recurso **Report a vulnerability** na aba *Security* do repositório (advisories privados do GitHub).
+Please do not open a public issue. Use **Report a vulnerability** in the repository's *Security* tab (GitHub private advisories).
 
-Responderemos assim que possível.
+We will respond as soon as possible.
 
-## Escopo
+## Scope
 
-A extensão não faz requisições de rede nem coleta dados. Relatos sobre redirecionamentos indevidos, permissões excessivas ou comportamento inesperado são bem-vindos.
+The extension makes no network requests and collects no data. Reports about unintended redirects, excessive permissions or unexpected behavior are welcome.

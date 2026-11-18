@@ -1,25 +1,25 @@
-# Código de Conduta
+# Code of Conduct
 
-## Nosso compromisso
+## Our pledge
 
-Queremos um ambiente acolhedor e livre de assédio para todas as pessoas, independentemente de idade, deficiência, etnia, identidade de gênero, nível de experiência, nacionalidade, aparência, religião ou orientação sexual.
+We want a welcoming, harassment-free environment for everyone, regardless of age, disability, ethnicity, gender identity, level of experience, nationality, appearance, religion or sexual orientation.
 
-## Comportamentos esperados
+## Expected behavior
 
-- Ser respeitoso e empático.
-- Aceitar críticas construtivas com maturidade.
-- Focar no que é melhor para o projeto e a comunidade.
+- Be respectful and empathetic.
+- Accept constructive criticism gracefully.
+- Focus on what is best for the project and the community.
 
-## Comportamentos inaceitáveis
+## Unacceptable behavior
 
-- Linguagem ou imagens sexualizadas, ataques pessoais, trolling e insultos.
-- Assédio público ou privado.
-- Publicar informações privadas de terceiros sem permissão.
+- Sexualized language or imagery, personal attacks, trolling and insults.
+- Public or private harassment.
+- Publishing others' private information without permission.
 
-## Aplicação
+## Enforcement
 
-Mantenedores podem remover, editar ou rejeitar comentários, commits, issues e outras contribuições que violem este código, e banir quem se comportar de forma inadequada.
+Maintainers may remove, edit or reject comments, commits, issues and other contributions that violate this code, and may ban anyone who behaves inappropriately.
 
-Para reportar um problema, abra uma issue ou contate os mantenedores pelo perfil do GitHub.
+To report a problem, open an issue or contact the maintainers through their GitHub profile.
 
-Adaptado do [Contributor Covenant](https://www.contributor-covenant.org), versão 2.1.
+Adapted from the [Contributor Covenant](https://www.contributor-covenant.org), version 2.1.

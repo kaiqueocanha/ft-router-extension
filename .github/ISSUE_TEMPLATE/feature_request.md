@@ -1,10 +1,10 @@
 ---
-name: Sugestão
-about: Ideia de melhoria
+name: Feature request
+about: Suggest an improvement
 labels: enhancement
 ---
 
-**Problema que a sugestão resolve**
+**Problem this solves**
 
 
-**Solução proposta**
+**Proposed solution**

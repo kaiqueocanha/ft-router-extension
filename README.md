@@ -4,38 +4,38 @@
 ![Manifest V3](https://img.shields.io/badge/Chrome-Manifest%20V3-green.svg)
 ![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 
-Extensão do Chrome que redireciona automaticamente `www.ft.com` e `ft.com` para `app.ft.com`, preservando o resto da URL.
+A Chrome extension that automatically redirects `www.ft.com` and `ft.com` to `app.ft.com`, preserving the rest of the URL.
 
-| Você abre                              | Você chega em                      |
-| -------------------------------------- | ---------------------------------- |
-| `https://www.ft.com/`                  | `https://app.ft.com/`              |
-| `https://www.ft.com/world`             | `https://app.ft.com/world`         |
-| `https://ft.com/content/abc?x=1#topo`  | `https://app.ft.com/content/abc?x=1#topo` |
+| You open                               | You land on                               |
+| -------------------------------------- | ----------------------------------------- |
+| `https://www.ft.com/`                  | `https://app.ft.com/`                     |
+| `https://www.ft.com/world`             | `https://app.ft.com/world`                |
+| `https://ft.com/content/abc?x=1#top`   | `https://app.ft.com/content/abc?x=1#top`  |
 
-## Recursos
+## Features
 
-- Redirect feito pelo navegador antes da página carregar, sem flash da página original.
-- Preserva caminho, query string e fragmento.
-- Só navegação de página (`main_frame`): imagens, scripts e APIs não são tocados.
-- Popup com toggle on/off. O estado persiste e o badge do ícone mostra `ON`/`OFF`.
-- Sem coleta de dados, sem rede, sem analytics.
+- Redirect handled by the browser before the page loads, with no flash of the original page.
+- Preserves path, query string and fragment.
+- Page navigations only (`main_frame`): images, scripts and APIs are untouched.
+- Popup with an on/off toggle. The state persists and the icon badge shows `ON`/`OFF`.
+- No data collection, no network requests, no analytics.
 
-## Instalação
+## Installation
 
-A extensão ainda não está na Chrome Web Store. Para instalar a partir do código:
+The extension is not on the Chrome Web Store yet. To install from source:
 
-1. Clone o repositório:
+1. Clone the repository:
    ```bash
    git clone https://github.com/kaiqueocanha/ft-router-extension.git
    ```
-2. Abra `chrome://extensions` e ative o **Modo do desenvolvedor**.
-3. Clique em **Carregar sem compactação** e selecione a pasta clonada.
+2. Open `chrome://extensions` and enable **Developer mode**.
+3. Click **Load unpacked** and select the cloned folder.
 
-Funciona também em navegadores baseados em Chromium (Edge, Brave etc.).
+It also works in other Chromium-based browsers (Edge, Brave, etc.).
 
-## Como funciona
+## How it works
 
-A extensão usa a API [`declarativeNetRequest`](https://developer.chrome.com/docs/extensions/reference/api/declarativeNetRequest) do Manifest V3, com uma regra estática em [`rules.json`](rules.json):
+The extension uses the Manifest V3 [`declarativeNetRequest`](https://developer.chrome.com/docs/extensions/reference/api/declarativeNetRequest) API with a static rule in [`rules.json`](rules.json):
 
 ```json
 {
@@ -44,37 +44,37 @@ A extensão usa a API [`declarativeNetRequest`](https://developer.chrome.com/doc
 }
 ```
 
-O service worker ([`background.js`](background.js)) apenas liga e desliga esse ruleset conforme o toggle do popup, e atualiza o badge.
+The service worker ([`background.js`](background.js)) only enables or disables that ruleset according to the popup toggle, and updates the badge.
 
-## Estrutura
+## Project structure
 
 ```
-manifest.json   Configuração da extensão (MV3)
-rules.json      Regra de redirecionamento
-background.js   Service worker: toggle e badge
-popup.html/js   Interface do toggle
+manifest.json   Extension configuration (MV3)
+rules.json      Redirect rule
+background.js   Service worker: toggle and badge
+popup.html/js   Toggle UI
 ```
 
-## Permissões
+## Permissions
 
-| Permissão                  | Motivo                                          |
-| -------------------------- | ----------------------------------------------- |
-| `declarativeNetRequest`    | Aplicar a regra de redirect                     |
-| `storage`                  | Guardar se o redirect está ligado ou desligado  |
-| Hosts `ft.com`, `www.ft.com`, `app.ft.com` | Necessário para redirecionar entre eles |
+| Permission                                  | Reason                                    |
+| ------------------------------------------- | ----------------------------------------- |
+| `declarativeNetRequest`                     | Apply the redirect rule                   |
+| `storage`                                   | Remember whether the redirect is on/off   |
+| Hosts `ft.com`, `www.ft.com`, `app.ft.com`  | Required to redirect between them         |
 
-## Limitações conhecidas
+## Known limitations
 
-- Não verificamos se todos os caminhos do `www.ft.com` existem no `app.ft.com`. Se algum quebrar (login, conta etc.), [abra uma issue](../../issues) ou adicione uma exclusão em `rules.json`.
+- We have not verified that every `www.ft.com` path exists on `app.ft.com`. If a path breaks (login, account, etc.), [open an issue](../../issues) or add an exclusion rule in `rules.json`.
 
-## Contribuindo
+## Contributing
 
-Contribuições são bem-vindas! Leia o [CONTRIBUTING.md](CONTRIBUTING.md) e o [Código de Conduta](CODE_OF_CONDUCT.md).
+Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) and the [Code of Conduct](CODE_OF_CONDUCT.md).
 
-## Aviso
+## Disclaimer
 
-Projeto independente, sem afiliação com o Financial Times. "FT" e "Financial Times" pertencem aos seus respectivos donos.
+Independent project, not affiliated with the Financial Times. "FT" and "Financial Times" belong to their respective owners.
 
-## Licença
+## License
 
 [MIT](LICENSE)
